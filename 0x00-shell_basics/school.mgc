@@ -1,2 +1,2 @@
-School data
-!:mime SCHOOL
+#!/bin/bash
+file *school*
