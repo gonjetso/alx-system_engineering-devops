@@ -1,0 +1,29 @@
+What is a server?
+A server is computer hardware or software that provides functionality for other programs or devices, called clients.
+
+What is the role of the domain name?
+The domain name is a readable label that is used to identify and access a website or a resource on the internet. It is unique and is associated with an IP address, which is the numerical address that identifies a specific device or server on the internet.
+
+What type of DNS record www is in www.foobar.com?
+The "www" in "www.foobar.com" is a subdomain, and it is usually associated with a DNS record of type "CNAME" (Canonical Name). A CNAME record allows a domain name to be an alias for another domain name.
+
+What is the role of the web server?
+The web server is a software program that runs on a computer and is responsible for serving web pages and other web content to clients (usually web browsers) over the internet or an intranet.
+
+What is the role of the application server?
+The application server is a software program that provides a runtime environment for web applications to run on. It typically runs on a separate server from the web server and is responsible for handling business logic and application-level functionality.
+
+What is the role of the database?
+The database is a software program that provides a centralized and structured storage for managing data. It allows users to store, access, and manipulate data in an organized and efficient way. The database stores data in tables, which are composed of columns and rows.
+
+What is the server using to communicate with the computer of the user requesting the website
+The server uses the HTTP (Hypertext Transfer Protocol) to communicate with the user's computer. HTTP is a protocol that governs the transfer of data over the internet, and it enables communication between web servers and clients (such as web browsers).
+
+SPOF
+One source of failure is having a single server that hosts a web server, application server, and database all in one. When such a component fails, the entire system will stop working, which is known as a single point of failure.
+
+Downtime when maintenance needed (like deploying new code web server needs to be restarted)
+If the server relies on a single code base that is unavailable during maintenance, the downtime period may exceed the expected duration. This can prevent users from accessing the website and its content, leading to a negative user experience and a loss of traffic.
+
+Cannot scale if too much incoming traffic
+The website may face scalability issues when there is an influx of traffic. This is because the domain name is directly linked to the server, and there is no load balancer to distribute the traffic. As a result, the server may struggle to handle the increased traffic, leading to a suboptimal user experience or even a cap on the number of users that can access the website.
